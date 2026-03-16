@@ -79,7 +79,7 @@ def correct_aberration(ra, dec, current_time):
     fullycorrectedDec = correctedDec + nutdeltaDec
     return(fullycorrectedRA, fullycorrectedDec)
 
-df = pd.read_csv('CelestialTheodoliteAstroLiveData.csv', sep=',', encoding="utf-8")
+df = pd.read_csv('CelestialTheodoliteData.csv', sep=',', encoding="utf-8")
 df_out = pd.DataFrame(columns=df.columns)
 totalgood = -1
 totalbad = 0
